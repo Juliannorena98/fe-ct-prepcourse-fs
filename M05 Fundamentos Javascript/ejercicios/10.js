@@ -3,6 +3,11 @@ function esFechaValida(fecha) {
   // Comprueba si este corresponde a una fecha válida.
   // Si es así, retorna true, sino retorna false.
   // Tu código:
-}
+let dateObject = new date (2024, 2, 10);
 
-module.exports = esFechaValida;
+if (Object.prototype.toString.call(dateObject) === "[object Date]" && !isNaN(dateObject)) {
+  return true;
+} else {
+  return false; 
+}
+}
